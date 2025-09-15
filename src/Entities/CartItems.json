@@ -1,0 +1,24 @@
+{
+  "name": "CartItem",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "Product reference"
+    },
+    "quantity": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Quantity in cart"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "User reference"
+    }
+  },
+  "required": [
+    "product_id",
+    "quantity",
+    "user_email"
+  ]
+}

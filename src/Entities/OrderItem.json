@@ -1,0 +1,38 @@
+{
+  "name": "OrderItem",
+  "type": "object",
+  "properties": {
+    "order_id": {
+      "type": "string",
+      "description": "Order reference"
+    },
+    "product_id": {
+      "type": "string",
+      "description": "Product reference"
+    },
+    "quantity": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Quantity ordered"
+    },
+    "price": {
+      "type": "number",
+      "description": "Price at purchase"
+    },
+    "product_name": {
+      "type": "string",
+      "description": "Product name at purchase"
+    },
+    "unit": {
+      "type": "string",
+      "description": "Unit at purchase"
+    }
+  },
+  "required": [
+    "order_id",
+    "product_id",
+    "quantity",
+    "price",
+    "product_name"
+  ]
+}

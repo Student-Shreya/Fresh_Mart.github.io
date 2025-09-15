@@ -1,0 +1,64 @@
+{
+  "name": "Order",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Customer email"
+    },
+    "total_amount": {
+      "type": "number",
+      "description": "Order total"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed",
+        "preparing",
+        "ready",
+        "delivered",
+        "cancelled"
+      ],
+      "default": "pending",
+      "description": "Order status"
+    },
+    "delivery_address": {
+      "type": "object",
+      "properties": {
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        }
+      },
+      "description": "Delivery address"
+    },
+    "delivery_time": {
+      "type": "string",
+      "description": "Requested delivery time"
+    },
+    "payment_method": {
+      "type": "string",
+      "description": "Payment method"
+    },
+    "order_notes": {
+      "type": "string",
+      "description": "Special instructions"
+    }
+  },
+  "required": [
+    "user_email",
+    "total_amount"
+  ]
+}

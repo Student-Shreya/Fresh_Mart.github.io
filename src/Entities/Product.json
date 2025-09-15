@@ -1,0 +1,73 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Product name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Product description"
+    },
+    "price": {
+      "type": "number",
+      "description": "Product price"
+    },
+    "category_name": {
+      "type": "string",
+      "description": "The name of the category for easier filtering"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Product image"
+    },
+    "stock_quantity": {
+      "type": "integer",
+      "default": 0,
+      "description": "Available stock"
+    },
+    "unit": {
+      "type": "string",
+      "default": "each",
+      "description": "Unit of measurement (each, lb, oz, etc)"
+    },
+    "brand": {
+      "type": "string",
+      "description": "Product brand"
+    },
+    "dietary_type": {
+      "type": "string",
+      "enum": [
+        "vegetarian",
+        "vegan",
+        "non-vegetarian"
+      ],
+      "description": "Dietary classification of the product"
+    },
+    "is_organic": {
+      "type": "boolean",
+      "default": false,
+      "description": "Organic product"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Featured product"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Product availability"
+    },
+    "nutrition_info": {
+      "type": "object",
+      "description": "Nutrition information"
+    }
+  },
+  "required": [
+    "name",
+    "price",
+    "category_name"
+  ]
+}
