@@ -83,6 +83,8 @@ export default function Layout({ children, currentPageName }) {
 
                     <nav className="hidden md:flex items-center gap-8 ml-10">
                         {navItems.map((item) => <Link key={item.name} to={item.url} className={`font-medium transition-colors ${isActive(item.url) ? "text-green-600" : "text-gray-600 hover:text-gray-900"}`}>{item.name}</Link>)}
+                        )
+                        }
                     </nav>
 
                     <form onSubmit={handleSearch} className="hidden md:flex items-center flex-1 max-w-md mx-8">
@@ -99,6 +101,7 @@ export default function Layout({ children, currentPageName }) {
                         <Link to={createPageUrl("Cart")} className="relative p-2 rounded-full hover:bg-gray-100">
                             <ShoppingCart className="w-6 h-6 text-gray-700" />
                             {cartCount > 0 && <span className="absolute top-0 right-0 block h-5 w-5 rounded-full bg-green-600 text-white text-xs flex items-center justify-center">{cartCount}</span>}
+                            }
                         </Link>
                         {user ? (
                             <>
@@ -106,6 +109,8 @@ export default function Layout({ children, currentPageName }) {
                                 <Button onClick={handleLogout} variant="ghost" size="icon" className="text-gray-700"><LogOut className="w-6 h-6" /></Button>
                             </>
                         ) : (<Button onClick={handleLogin}>Sign In</Button>)}
+                        )
+                        }
                         <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
                             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                         </Button>
@@ -120,6 +125,8 @@ export default function Layout({ children, currentPageName }) {
                         </form>
                         <nav className="flex flex-col space-y-2">
                             {navItems.map((item) => <Link key={item.name} to={item.url} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive(item.url) ? "bg-green-100 text-green-700" : "text-gray-700 hover:bg-gray-100"}`} onClick={() => setMobileMenuOpen(false)}>{item.name}</Link>)}
+                            )
+                            }
                         </nav>
                     </div>
                 )}
