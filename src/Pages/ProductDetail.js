@@ -110,6 +110,7 @@ export default function ProductDetailPage() {
                     {/* Product Details */}
                     <div>
                         {product.brand && <p className="text-sm text-green-600 font-semibold mb-2">{product.brand}</p>}
+                        }
                         <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{product.name}</h1>
                         
                         <div className="flex items-center gap-4 mb-4">
@@ -119,6 +120,7 @@ export default function ProductDetailPage() {
                                 <span className="text-gray-500">(120 reviews)</span>
                             </div>
                             {product.is_organic && <Badge className="bg-green-100 text-green-800"><Leaf className="w-3 h-3 mr-1"/>Organic</Badge>}
+                            }
                             <DietaryBadge type={product.dietary_type} />
                         </div>
 
@@ -142,6 +144,7 @@ export default function ProductDetailPage() {
                         </div>
                         
                         {product.stock_quantity > 0 && <p className="text-sm text-gray-500">{product.stock_quantity} available in stock</p>}
+                        }
                     </div>
                 </div>
 

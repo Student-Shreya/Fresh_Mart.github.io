@@ -154,6 +154,7 @@ export default function AdminProductsPage() {
                                                         <div>
                                                             <p className="font-semibold">{product.name}</p>
                                                             {product.brand && <p className="text-sm text-gray-500">{product.brand}</p>}
+                                                            }
                                                         </div>
                                                     </div>
                                                 </TableCell>
