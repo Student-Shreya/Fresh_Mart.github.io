@@ -1,12 +1,11 @@
-
 import React, { useState, useEffect } from 'react';
-import { User } from './Entities/User';
-import { Order } from './Entities/Order';
-import { OrderItem } from './Entities/OrderItem';
-import { Product } from './Entities/Product';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from './Components/ui/card';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './Components/ui/accordion';
-import { Badge } from './Components/ui/badge';
+import User from '../Entities/User';
+import { Order } from '../Entities/Order';
+import { OrderItem } from '../Entities/OrderItem';
+import { Product } from '../Entities/Product';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../Components/ui/card';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../Components/ui/accordion';
+import { Badge } from '../Components/ui/badge';
 import { format } from 'date-fns';
 
 export default function OrderHistoryPage() {

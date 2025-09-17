@@ -1,18 +1,17 @@
-
 import { motion } from "framer-motion";
 import { Building, CreditCard, Lock, Smartphone } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "./Components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "./Components/ui/card";
-import { Input } from "./Components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./Components/ui/select";
-import { CartItem } from "./Entities/CartItem";
-import { Order } from "./Entities/Order";
-import { OrderItem } from "./Entities/OrderItem";
-import { Product } from "./Entities/Product";
-import { User } from "./Entities/User";
-import { createPageUrl } from "./utils";
+import { Button } from "../Components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "../Components/ui/card";
+import { Input } from "../Components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../Components/ui/select";
+import { CartItem } from "../Entities/CartItem";
+import { Order } from "../Entities/Order";
+import { OrderItem } from "../Entities/OrderItem";
+import { Product } from "../Entities/Product";
+import User from "../Entities/User";
+import { createPageUrl } from "../utils";
 
 export default function CheckoutPage() {
     const [user, setUser] = useState(null);

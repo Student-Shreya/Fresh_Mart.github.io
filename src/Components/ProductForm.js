@@ -1,16 +1,14 @@
-
-// import { Button } from '@/components/ui/button';
-import { Button } from "./Components/ui/button"; // adjust path based on location
+import { Button } from "./ui/button";
 
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { toast } from 'sonner';
-import { Checkbox } from './Components/ui/checkbox';
-import { Input } from './Components/ui/input';
-import { Label } from './Components/ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './Components/ui/select';
-import { Textarea } from './Components/ui/textarea';
-import { Product } from './Entities/Product';
+import { Checkbox } from './ui/checkbox';
+import { Input } from './ui/input';
+import { Label } from './ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
+import { Textarea } from './ui/textarea';
+import { Product } from '../Entities/Product';
 
 export default function ProductForm({ product, categories, onSubmitSuccess }) {
     const [formData, setFormData] = useState({

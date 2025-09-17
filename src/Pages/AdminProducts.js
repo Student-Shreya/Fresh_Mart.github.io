@@ -1,16 +1,15 @@
-
 import { motion } from 'framer-motion';
 import { Edit, PlusCircle, Trash2 } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { toast } from 'sonner';
 import AdminGuard from '../Components/AdminGuard';
 import ProductForm from '../Components/ProductForm';
-import { Button } from './Components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from './Components/ui/card';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from './Components/ui/dialog';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './Components/ui/table';
-import { Category } from './Entities/Category';
-import { Product } from './Entities/Product';
+import { Button } from '../Components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '../Components/ui/card';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '../Components/ui/dialog';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../Components/ui/table';
+import { Category } from '../Entities/Category';
+import { Product } from '../Entities/Product';
 
 export default function AdminProductsPage() {
     const [products, setProducts] = useState([]);

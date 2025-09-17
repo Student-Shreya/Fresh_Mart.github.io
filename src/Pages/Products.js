@@ -1,14 +1,13 @@
-
-import { Button } from "./Components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "./Components/ui/card";
-import { Checkbox } from "./Components/ui/checkbox";
-import { Input } from "./Components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./Components/ui/select";
-import { CartItem } from "./Entities/CartItem";
-import { Category } from "./Entities/Category";
-import { Product } from "./Entities/Product";
-import { User } from "./Entities/User";
-import { createPageUrl } from "./utils";
+import { Button } from "../Components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "../Components/ui/card";
+import { Checkbox } from "../Components/ui/checkbox";
+import { Input } from "../Components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../Components/ui/select";
+import { CartItem } from "../Entities/CartItem";
+import { Category } from "../Entities/Category";
+import { Product } from "../Entities/Product";
+import User from "../Entities/User";
+import { createPageUrl } from "../utils";
 import { Beef, Filter, Leaf, Search, Vegan, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import ProductCard from "../Components/ProductCard";

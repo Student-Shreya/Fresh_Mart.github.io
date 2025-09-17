@@ -1,16 +1,15 @@
-
 import { motion } from "framer-motion";
 import { ArrowRight, Award, CheckCircle, Clock, Leaf, Shield, Star, Truck } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import CategoryCard from "../Components/CategoryCard";
 import ProductCard from "../Components/ProductCard";
-import { Button } from "./Components/ui/button";
-import { CartItem } from "./Entities/CartItem";
-import { Category } from "./Entities/Category";
-import { Product } from "./Entities/Product";
-import { User } from "./Entities/User";
-import { createPageUrl } from "./utils";
+import { Button } from "../Components/ui/button";
+import { CartItem } from "../Entities/CartItem";
+import { Category } from "../Entities/Category";
+import { Product } from "../Entities/Product";
+import User from "../Entities/User";
+import { createPageUrl } from "../utils";
 
 export default function HomePage() {
     const [featuredProducts, setFeaturedProducts] = useState([]);

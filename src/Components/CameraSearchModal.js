@@ -1,13 +1,11 @@
-
-// import { Button } from '@/components/ui/button';
-import { Button } from "./Components/ui/button"; // adjust path based on location
+import { Button } from "./ui/button";
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { Camera, Loader, ScanLine, Search, X } from 'lucide-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { InvokeLLM, UploadFile } from './integrations/Core';
-import { createPageUrl } from './utils';
+import { InvokeLLM, UploadFile } from '../integrations/Core';
+import { createPageUrl } from '../utils';
 
 export default function CameraSearchModal({ onClose }) {
     const videoRef = useRef(null);

@@ -1,9 +1,8 @@
-
-import { Badge } from './Components/ui/badge';
-import { Card } from './Components/ui/card';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './Components/ui/select';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './Components/ui/table';
-import { Order } from './Entities/Order';
+import { Badge } from '../Components/ui/badge';
+import { Card } from '../Components/ui/card';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../Components/ui/select';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../Components/ui/table';
+import { Order } from '../Entities/Order';
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 import { toast } from 'sonner';

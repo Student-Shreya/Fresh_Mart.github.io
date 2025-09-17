@@ -1,14 +1,12 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
-import { Card, CardContent } from "./Components/ui/card";
-import { createPageUrl } from "./utils";
-// import { Button } from "./components/ui/button";
-import { Button } from "./Components/ui/button"; // adjust path based on location
+import { Card, CardContent } from "./ui/card";
+import { createPageUrl } from "../utils";
+import { Button } from "./ui/button";
 
 import { motion } from "framer-motion";
 import { Beef, Leaf, ShoppingCart, Star, Vegan } from "lucide-react";
-import { Badge } from "./Components/ui/badge";
+import { Badge } from "./ui/badge";
 
 const DietaryIcon = ({ type }) => {
     if (type === 'vegetarian') {

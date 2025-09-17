@@ -1,14 +1,13 @@
-
 import { format } from 'date-fns';
 import { motion } from 'framer-motion';
 import { Activity, DollarSign, Package, ShoppingCart, TrendingUp, Users } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import AdminGuard from '../Components/AdminGuard';
-import { Card, CardContent, CardHeader, CardTitle } from './Components/ui/card';
-import { Order } from './Entities/Order';
-import { Product } from './Entities/Product';
-import { User } from './Entities/User';
+import { Card, CardContent, CardHeader, CardTitle } from '../Components/ui/card';
+import { Order } from '../Entities/Order';
+import { Product } from '../Entities/Product';
+import User from '../Entities/User';
 
 export default function AdminDashboard() {
     const [stats, setStats] = useState({ revenue: 0, orders: 0, products: 0, customers: 0 });

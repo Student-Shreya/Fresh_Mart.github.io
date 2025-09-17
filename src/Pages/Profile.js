@@ -1,7 +1,7 @@
-import { Button } from './Components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './Components/ui/card';
-import { Input } from './Components/ui/input';
-import { User } from './Entities/User';
+import { Button } from '../Components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../Components/ui/card';
+import { Input } from '../Components/ui/input';
+import User from '../Entities/User';
 import { CheckCircle, Mail, Phone, ShieldAlert } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { toast } from 'sonner';

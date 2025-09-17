@@ -1,14 +1,13 @@
-
 import { Beef, Leaf, Minus, Plus, ShoppingCart, Star, Vegan } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import ProductCard from "../Components/ProductCard";
-import { Badge } from "./Components/ui/badge";
-import { Button } from "./Components/ui/button";
-import { Input } from "./Components/ui/input";
-import { CartItem } from "./Entities/CartItem";
-import { Product } from "./Entities/Product";
-import { User } from "./Entities/User";
+import { Badge } from "../Components/ui/badge";
+import { Button } from "../Components/ui/button";
+import { Input } from "../Components/ui/input";
+import { CartItem } from "../Entities/CartItem";
+import { Product } from "../Entities/Product";
+import User from "../Entities/User";
 
 const DietaryBadge = ({ type }) => {
     if (type === 'vegetarian') {

@@ -1,14 +1,14 @@
 
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { CartItem } from '@/entities/CartItem';
-import { User } from '@/entities/User';
-import { createPageUrl } from '@/utils';
+import { Button } from './Components/ui/button';
+import { Input } from './Components/ui/input';
+import { CartItem } from './Entities/CartItem';
+import User from './Entities/User';
+import { createPageUrl } from './utils';
 import { BarChart2, Camera, Home, Leaf, ListOrdered, LogOut, Menu, Package, Search, ShoppingCart, User as UserIcon, X } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Toaster, toast } from 'sonner';
-import CameraSearchModal from '../components/CameraSearchModal';
+import CameraSearchModal from './Components/CameraSearchModal';
 
 export default function Layout({ children, currentPageName }) {
     const [user, setUser] = useState(null);

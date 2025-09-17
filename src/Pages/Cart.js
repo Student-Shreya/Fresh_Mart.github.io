@@ -1,10 +1,9 @@
-
-import { Button } from "./Components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "./Components/ui/card";
-import { CartItem } from "./Entities/CartItem";
-import { Product } from "./Entities/Product";
-import { User } from "./Entities/User";
-import { createPageUrl } from "./utils";
+import { Button } from "../Components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "../Components/ui/card";
+import { CartItem } from "../Entities/CartItem";
+import { Product } from "../Entities/Product";
+import User from "../Entities/User";
+import { createPageUrl } from "../utils";
 import { ArrowLeft, Minus, Plus, ShoppingCart, Trash2 } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";

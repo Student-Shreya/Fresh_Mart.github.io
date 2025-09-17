@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { User } from './Entities/User';
+import User from '../Entities/User';
 import { createPageUrl } from './utils';
 
 export default function AdminGuard({ children }) {

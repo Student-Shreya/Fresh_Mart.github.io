@@ -1,11 +1,10 @@
-// import { Button } from "@/components/ui/button";
-import { Button } from "./Components/ui/button"; // adjust path based on location
+import { Button } from "./ui/button";
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { createPageUrl } from "./utils";
+import { createPageUrl } from "../utils";
 
 export default function CategoryCard({ category, index = 0 }) {
     return (
